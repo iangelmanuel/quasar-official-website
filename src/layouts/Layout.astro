@@ -1,29 +1,34 @@
 ---
+import SEO from "@/components/shared/SEO.astro"
+import type { Preload } from "@/types/preload"
+
 interface Props {
   title: string
+  description: string
+  preload?: Array<Preload>
+  canonical?: string
+  image?: string
 }
 
-const { title } = Astro.props
+const {
+  title,
+  description,
+  preload = [],
+  canonical = "",
+  image = ""
+} = Astro.props
 ---
 
 <!doctype html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta
-      name="description"
-      content="Astro description"
+    <SEO
+      title={title}
+      description={description}
+      preload={preload}
+      canonical={canonical}
+      image={image}
     />
-    <meta
-      name="viewport"
-      content="width=device-width"
-    />
-    <link
-      rel="icon"
-      type="image/svg+xml"
-      href="/favicon.svg"
-    />
-    <title>{title}</title>
   </head>
   <body>
     <main>
