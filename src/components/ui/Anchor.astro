@@ -1,0 +1,19 @@
+---
+import '@/styles/button-link.css'
+
+interface Props {
+  href: string
+  className?: string
+}
+
+const { href, className } = Astro.props
+---
+
+<a
+  href={href}
+  class:list={['button-link', className]}
+>
+  <span>
+    <slot />
+  </span>
+</a>

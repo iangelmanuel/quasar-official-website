@@ -1,6 +1,5 @@
 ---
-// import RichResults from "@/components/RichResults.astro"
-import type { Preload } from "@/types/preload"
+import type { Preload } from '@/types/preload'
 
 interface Props {
   title: string
@@ -15,11 +14,11 @@ const {
   description,
   preload,
   canonical,
-  image = "https://cdn.lavelada.dev/og.jpg"
+  image = '/favicon.svg'
 } = Astro.props as Props
 
 const determineCanonicalURL = () => {
-  if (Astro.url.host.includes("localhost")) return "http://localhost:4321"
+  if (Astro.url.host.includes('localhost')) return 'http://localhost:4321'
   return canonical || Astro.url.pathname
 }
 
@@ -47,7 +46,7 @@ const canonicalURL = new URL(determineCanonicalURL(), Astro.site)
 /> -->
 
 {
-  preload?.map(({ href, as, type, rel = "preload", crossorigin }) => (
+  preload?.map(({ href, as, type, rel = 'preload', crossorigin }) => (
     <link
       {rel}
       {href}
@@ -119,7 +118,7 @@ const canonicalURL = new URL(determineCanonicalURL(), Astro.site)
 />
 <meta
   property="og:site_name"
-  content="La Velada 4"
+  content="Quasar Design"
 />
 <meta
   property="og:type"
@@ -127,7 +126,7 @@ const canonicalURL = new URL(determineCanonicalURL(), Astro.site)
 />
 <meta
   property="og:locale"
-  content="es_ES"
+  content="es_CO"
 />
 
 <meta
@@ -144,27 +143,3 @@ const canonicalURL = new URL(determineCanonicalURL(), Astro.site)
   type="image/svg+xml"
   href="/favicon.svg"
 />
-<link
-  rel="apple-touch-icon"
-  href="/img/icons/apple-touch-icon.png"
-/>
-
-<link
-  rel="icon"
-  type="image/svg+xml"
-  href="/favicon.svg"
-/>
-<meta
-  name="msapplication-config"
-  content="/browserconfig.xml"
-/>
-
-<script
-  is:inline
-  src="/registerSW.js"
-></script>
-<link
-  rel="manifest"
-  href="/manifest.webmanifest"
-/>
-<!-- <RichResults /> -->
