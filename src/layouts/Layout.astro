@@ -1,6 +1,9 @@
 ---
-import SEO from "@/components/shared/SEO.astro"
-import type { Preload } from "@/types/preload"
+import SEO from '@/components/shared/SEO.astro'
+import Topmenu from '@/components/shared/Topmenu.astro'
+import { ViewTransitions } from 'astro:transitions'
+import type { Preload } from '@/types/preload'
+import '@/styles/global.css'
 
 interface Props {
   title: string
@@ -14,13 +17,13 @@ const {
   title,
   description,
   preload = [],
-  canonical = "",
-  image = ""
+  canonical = '',
+  image = ''
 } = Astro.props
 ---
 
 <!doctype html>
-<html lang="en">
+<html lang="es">
   <head>
     <SEO
       title={title}
@@ -29,8 +32,10 @@ const {
       canonical={canonical}
       image={image}
     />
+    <ViewTransitions fallback="swap" />
   </head>
   <body>
+    <Topmenu />
     <main>
       <slot />
     </main>
