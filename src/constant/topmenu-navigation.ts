@@ -1,19 +1,28 @@
 interface TopMenuNavigation {
   title: string
   url: string
+  hash: string
 }
 
 export const topMenuNavigation: TopMenuNavigation[] = [
   {
-    title: 'Inicio',
-    url: '/'
-  },
-  {
     title: 'Nosotros',
-    url: '/about'
+    url: '/',
+    hash: '#about'
   },
   {
     title: 'Servicios',
-    url: '/services'
+    url: '/services',
+    hash: ''
+  },
+  {
+    title: 'Proyectos',
+    url: '/projects',
+    hash: '#projects'
+  },
+  {
+    title: 'Paquetes',
+    url: '/packages',
+    hash: '#packages'
   }
 ]
