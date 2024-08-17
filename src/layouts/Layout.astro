@@ -3,7 +3,7 @@ import SEO from '@/components/shared/SEO.astro'
 import Topmenu from '@/components/shared/Topmenu.astro'
 import { ViewTransitions } from 'astro:transitions'
 import type { Preload } from '@/types/preload'
-import '@/styles/global.css'
+import '@/styles/globals.css'
 
 interface Props {
   title: string
@@ -34,7 +34,9 @@ const {
     />
     <ViewTransitions fallback="swap" />
   </head>
-  <body>
+  <body
+    class="bg-quasar-darkest text-slate-200 selection:bg-quasar-light selection:text-white"
+  >
     <Topmenu />
     <main>
       <slot />
