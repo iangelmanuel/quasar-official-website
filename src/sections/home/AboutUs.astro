@@ -1,0 +1,44 @@
+---
+import Heading from '@/components/ui/Heading.astro'
+import Subtitle from '@/components/ui/Subtitle.astro'
+import Text from '@/components/ui/Text.astro'
+import Paragraph from '@/components/ui/Paragraph.astro'
+import Astronaut from '@/svg/Astronaut.astro'
+---
+
+<section
+  id="about-us"
+  class="w-full min-h-svh to-quasar-dark from-quasar-darkest grid place-content-center bg-gradient-to-t"
+>
+  <div
+    class="max-w-screen-xl mx-auto flex flex-col lg:flex-row gap-5 items-center z-20 p-5"
+  >
+    <article class="lg:w-1/2">
+      <Astronaut
+        width={570}
+        height={570}
+      />
+    </article>
+
+    <article class="lg:w-1/2">
+      <Heading className="text-lg">Sobre nosotros</Heading>
+      <Subtitle className="text-4xl md:text-7xl font-bold mb-5">
+        <Text>Quasar Design</Text>
+      </Subtitle>
+
+      <Paragraph className="text-base md:text-xl">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Suscipit
+        aperiam asperiores eius, voluptatibus neque numquam iste odit accusamus
+        reiciendis iure nobis distinctio possimus nulla molestias, id eum
+        mollitia? Nihil natus quasi, incidunt deserunt impedit, unde quis quam
+        quos tempora ipsa sunt, beatae totam ducimus itaque recusandae dicta
+        earum reiciendis nulla a? Aliquam incidunt, vel accusamus officiis
+        voluptatibus molestiae nobis dolores omnis esse deleniti mollitia animi
+        unde sequi sit tempore. Quo, libero culpa. Molestiae voluptate expedita,
+        assumenda numquam magnam modi sint dicta reprehenderit accusamus sed
+        aliquid quidem. Rerum quam ipsam, praesentium in delectus quo nulla
+        eveniet magni unde vel perspiciatis enim.
+      </Paragraph>
+    </article>
+  </div>
+</section>
