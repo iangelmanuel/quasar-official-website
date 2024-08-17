@@ -38,7 +38,7 @@
 
 .button-link::before {
   content: '';
-  background: #000;
+  background: var(--quasar-color-accent);
   width: 120%;
   left: -10%;
   transform: skew(30deg);
