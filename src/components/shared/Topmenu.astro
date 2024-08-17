@@ -5,7 +5,14 @@ import Anchor from '../ui/Anchor.astro'
 const { pathname } = Astro.url
 ---
 
-<header class="flex justify-center gap-10 items-center px-20 py-2 border-b">
+<div
+  id="top-menu-shadow"
+  class="bg-quasar-darkest border-b border-quasar-dark h-24 w-full fixed left-0 top-0 z-40 -translate-y-full transition-transform delay-150 duration-300"
+>
+</div>
+<header
+  class="flex justify-center gap-20 items-center py-6 shadow fixed w-full z-50 left-0 top-0"
+>
   <section class="mr-5">
     <a
       href="/"
@@ -23,10 +30,10 @@ const { pathname } = Astro.url
     <ul class="flex gap-20">
       {
         topMenuNavigation.map(({ title, url }) => (
-          <li class="hover:scale-110 transition-transform delay-150 duration-300">
+          <li class="hover:scale-125 transition-transform">
             <a
               href={url}
-              class="text-slate-800 font-semibold transition-all"
+              class="text-slate-200 font-semibold transition-all"
             >
               {title}
             </a>
@@ -50,3 +57,23 @@ const { pathname } = Astro.url
     >
   </section>
 </header>
+
+<script>
+  import { $ } from '@/lib/utils'
+
+  document.addEventListener('astro:page-load', () => {
+    const topMenu = $('#top-menu-shadow') as HTMLElement
+
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 50) {
+        topMenu.classList.remove('-translate-y-full')
+        topMenu.classList.add('translate-y-0')
+      }
+
+      if (window.scrollY < 50) {
+        topMenu.classList.remove('translate-y-0')
+        topMenu.classList.add('-translate-y-full')
+      }
+    })
+  })
+</script>
