@@ -1,13 +1,12 @@
-import { defineConfig } from "astro/config"
-import tailwind from "@astrojs/tailwind"
-
-import react from "@astrojs/react"
+import { defineConfig } from 'astro/config'
+import tailwind from '@astrojs/tailwind'
+import react from '@astrojs/react'
 
 // https://astro.build/config
 export default defineConfig({
-  site: "https://www.quasar-official-website.vercel.app",
+  site: 'https://www.quasar-official-website.vercel.app',
   buildOptions: {
-    site: "https://www.quasar-official-website.vercel.app"
+    site: 'https://www.quasar-official-website.vercel.app'
   },
   integrations: [tailwind(), react()]
 })
