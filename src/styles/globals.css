@@ -79,6 +79,39 @@ html {
   scroll-behavior: smooth;
 }
 
+@font-face {
+  font-family: 'FiraSans-Black';
+  font-style: normal;
+  font-display: swap;
+  src: url('/fonts/FiraSans.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'FiraSans-Bold';
+  font-style: normal;
+  font-display: swap;
+  src: url('/fonts/FiraSans-ExtraBold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'WorkSans';
+  font-style: normal;
+  font-display: swap;
+  src: url('/fonts/WorkSans.ttf') format('truetype');
+}
+
+.font-fira-black {
+  font-family: 'FiraSans-Black', sans-serif;
+}
+
+.font-fira-bold {
+  font-family: 'FiraSans-Bold', sans-serif;
+}
+
+.font-work-sans {
+  font-family: 'WorkSans', sans-serif;
+}
+
 /* :root {
   --color-primary: #007bff;
   --color-secondary: #6c757d;
