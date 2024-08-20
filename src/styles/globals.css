@@ -83,14 +83,21 @@ html {
   font-family: 'FiraSans-Black';
   font-style: normal;
   font-display: swap;
-  src: url('/fonts/FiraSans.ttf') format('truetype');
+  src: url('/fonts/FiraSans-Black.ttf') format('truetype');
 }
 
 @font-face {
   font-family: 'FiraSans-Bold';
   font-style: normal;
   font-display: swap;
-  src: url('/fonts/FiraSans-ExtraBold.ttf') format('truetype');
+  src: url('/fonts/FiraSans-Bold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Pacifico';
+  font-style: normal;
+  font-display: swap;
+  src: url('/fonts/Pacifico-Regular.ttf') format('truetype');
 }
 
 @font-face {
@@ -108,19 +115,10 @@ html {
   font-family: 'FiraSans-Bold', sans-serif;
 }
 
+.font-pacifico {
+  font-family: 'Pacifico', sans-serif;
+}
+
 .font-work-sans {
   font-family: 'WorkSans', sans-serif;
 }
-
-/* :root {
-  --color-primary: #007bff;
-  --color-secondary: #6c757d;
-  --color-success: #28a745;
-  --color-danger: #dc3545;
-  --color-warning: #ffc107;
-  --color-info: #17a2b8;
-  --color-light: #f8f9fa;
-  --color-dark: #343a40;
-  --color-white: #fff;
-  --color-black: #000;
-} */
