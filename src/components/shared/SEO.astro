@@ -33,17 +33,37 @@ const canonicalURL = new URL(determineCanonicalURL(), Astro.site)
   content={description}
 />
 
-<!-- <link
-  rel="preconnect"
-  href="https://cdn.lavelada.dev"
-/>
 <link
   rel="preload"
-  href={"https://cdn.lavelada.dev/fonts/font-atomic.woff2"}
+  href="/fonts/FiraSans-Black.ttf"
   as="font"
-  type="font/woff2"
+  type="font/ttf"
   crossorigin
-/> -->
+/>
+
+<link
+  rel="preload"
+  href="/fonts/FiraSans-Bold.ttf"
+  as="font"
+  type="font/ttf"
+  crossorigin
+/>
+
+<link
+  rel="preload"
+  href="/fonts/Pacifico-Regular.ttf"
+  as="font"
+  type="font/ttf"
+  crossorigin
+/>
+
+<link
+  rel="preload"
+  href="/fonts/WorkSans.ttf"
+  as="font"
+  type="font/ttf"
+  crossorigin
+/>
 
 {
   preload?.map(({ href, as, type, rel = 'preload', crossorigin }) => (
@@ -65,10 +85,10 @@ const canonicalURL = new URL(determineCanonicalURL(), Astro.site)
   name="viewport"
   content="width=device-width"
 />
-<!-- <meta
+<meta
   name="theme-color"
-  content="#d5ff00"
-/> -->
+  content="#885fff"
+/>
 
 <meta
   name="keywords"
