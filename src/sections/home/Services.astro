@@ -1,18 +1,89 @@
 ---
 import ShineBorder from '@/components/magicui/shine-border'
+import Heading from '@/components/ui/Heading.astro'
+import Paragraph from '@/components/ui/Paragraph.astro'
+import Subtitle from '@/components/ui/Subtitle.astro'
+import Text from '@/components/ui/Text.astro'
 ---
 
 <section
   id="our-services"
   class="w-full min-h-svh to-quasar-darkest from-quasar-dark grid place-content-center bg-gradient-to-t"
 >
-  <ShineBorder
-    borderRadius={10}
-    borderWidth={2}
-    duration={43}
-    color="#885fff"
-    className="w-full h-1/2 bg-quasar-darkest text-white"
+  <Heading className="text-4xl text-center font-bold mb-3"
+    >Nuestros Servicios</Heading
   >
-    Testing
-  </ShineBorder>
+  <div class="grid gap-5 grid-cols-4 w-full max-w-screen-xl">
+    <ShineBorder
+      borderRadius={10}
+      borderWidth={2}
+      duration={43}
+      color="#885fff"
+      className="w-full h-full bg-quasar-darkest text-white col-span-2 row-span-2 p-5"
+    >
+      <Subtitle className="text-2xl mb-2">
+        <Text>Desarrolla tu web para tu negocio</Text>
+      </Subtitle>
+
+      <Paragraph className="text-xl text-center">
+        Creamos sitios web comerciales que son rápidos, seguros y fáciles de
+        administrar. Utilizamos tecnologías modernas que posicionan tu página en
+        el ranking de Google.
+      </Paragraph>
+    </ShineBorder>
+
+    <ShineBorder
+      borderRadius={10}
+      borderWidth={2}
+      duration={43}
+      color="#885fff"
+      className="w-full h-full bg-quasar-darkest text-white p-5 col-span-2 row-span-2"
+    >
+      <Subtitle className="text-2xl mb-2">
+        <Text>Desarrollo de aplicaciones móviles para tu negocio</Text>
+      </Subtitle>
+
+      <Paragraph className="text-xl text-center">
+        Creamos aplicaciones móviles modernas que viajan a la velocidad de la
+        luz, siendo seguras y fáciles de administrar, para que tengas la
+        administración de tu negocio.
+      </Paragraph>
+    </ShineBorder>
+
+    <ShineBorder
+      borderRadius={10}
+      borderWidth={2}
+      duration={43}
+      color="#885fff"
+      className="w-full h-full bg-quasar-darkest text-white col-span-4 p-5"
+    >
+      <Subtitle className="text-2xl mb-2">
+        <Text>Desarrollo de Páginas Web</Text>
+      </Subtitle>
+
+      <Paragraph className="text-xl">
+        We build websites that are fast, secure, and easy to manage. We use
+        modern technologies like React, Next.js, and Tailwind CSS to create
+        websites that are fast, secure, and easy to manage.
+      </Paragraph>
+    </ShineBorder>
+
+    <ShineBorder
+      borderRadius={10}
+      borderWidth={2}
+      duration={43}
+      color="#885fff"
+      className="w-full h-full bg-quasar-darkest text-white col-span-4 p-5"
+    >
+      <Subtitle className="text-2xl mb-2">
+        <Text>Desarrollo de Páginas Web</Text>
+      </Subtitle>
+
+      <Paragraph className="text-xl">
+        We build websites that are fast, secure, and easy to manage. We use
+        modern technologies like React, Next.js, and Tailwind CSS to create
+        websites that are fast, secure, and easy to manage.
+      </Paragraph>
+    </ShineBorder>
+  </div>
 </section>
