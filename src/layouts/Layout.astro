@@ -18,7 +18,7 @@ const {
   description,
   preload = [],
   canonical = '',
-  image = ''
+  image = '/images/logo.png'
 } = Astro.props
 ---
 
@@ -32,7 +32,7 @@ const {
       canonical={canonical}
       image={image}
     />
-    <ViewTransitions fallback="swap" />
+    <ViewTransitions />
   </head>
   <body
     class="bg-quasar-darkest text-slate-200 selection:bg-quasar-light selection:text-white font-work-sans"
