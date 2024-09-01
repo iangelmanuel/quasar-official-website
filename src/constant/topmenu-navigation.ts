@@ -1,8 +1,4 @@
-interface TopMenuNavigation {
-  title: string
-  url: string
-  hash: string
-}
+import type { TopMenuNavigation } from '@/types'
 
 export const topMenuNavigation: TopMenuNavigation[] = [
   {
