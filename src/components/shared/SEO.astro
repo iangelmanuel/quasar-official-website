@@ -15,7 +15,7 @@ const {
   preload,
   canonical,
   image = '/favicon.svg'
-} = Astro.props as Props
+} = Astro.props
 
 const determineCanonicalURL = () => {
   if (Astro.url.host.includes('localhost')) return 'http://localhost:4321'
@@ -28,6 +28,7 @@ const canonicalURL = new URL(determineCanonicalURL(), Astro.site)
 <title>{title}</title>
 
 <meta charset="UTF-8" />
+
 <meta
   name="description"
   content={description}
