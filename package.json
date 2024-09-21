@@ -1,5 +1,6 @@
 {
   "name": "quasar-website",
+  "author": "Angel M.",
   "type": "module",
   "version": "0.0.1",
   "scripts": {
