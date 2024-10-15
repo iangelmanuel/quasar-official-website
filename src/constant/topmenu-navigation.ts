@@ -16,16 +16,16 @@ export const topMenuNavigation: TopMenuNavigation[] = [
     url: '/projects',
     hash: '#projects'
   },
-  // {
-  //   title: 'Equipo',
-  //   url: '/team',
-  //   hash: '#team'
-  // },
-  // {
-  //   title: 'Paquetes',
-  //   url: '/packages',
-  //   hash: '#packages'
-  // },
+  {
+    title: 'Equipo',
+    url: '/team',
+    hash: '#team'
+  },
+  {
+    title: 'Paquetes',
+    url: '/packages',
+    hash: '#packages'
+  },
   {
     title: 'Contacto',
     url: '/contact',
